@@ -1,0 +1,165 @@
+# Md. Sabbir Ahmed | Academic website | al-folio v1 Jekyll runtime
+# Repository: https://github.com/mdsabbirahmedbracu/mdsabbirahmedbracu.github.io
+title: ""
+first_name: "Md. Sabbir"
+middle_name: ""
+last_name: "Ahmed"
+lang: en
+icon: favicon.png
+contact_note: "For research collaborations, academic invitations, and student inquiries."
+description: >-
+  Md. Sabbir Ahmed is a Senior Lecturer in Computer Science and Engineering
+  at BRAC University researching Human-Computer Interaction, Human-Centered
+  and Trustworthy AI, Usable Security and Privacy, and Social Computing.
+keywords: "Md Sabbir Ahmed, HCI, human-computer interaction, human-centered AI, trustworthy AI, usable security, Bangladesh, SIGCHI"
+footer_text: 'Research, teaching, and academic community leadership. Built with <a href="https://github.com/alshedivat/al-folio">al-folio</a> and Jekyll.'
+url: "https://mdsabbirahmedbracu.github.io"
+baseurl: ""
+last_updated: false
+back_to_top: true
+navbar_fixed: true
+footer_fixed: false
+max_width: 1120px
+search_enabled: true
+socials_in_search: true
+posts_in_search: false
+bib_search: true
+protect_email: false
+# Plugin-backed runtime: this is an actual al-folio site, not an HTML imitation.
+theme: al_folio_core
+al_folio:
+  api_version: 1
+  style_engine: tailwind
+  tailwind:
+    version: 4.1.18
+    preflight: false
+    css_entry: assets/tailwind/app.css
+  distill:
+    engine: distillpub-template
+    source: al-org-dev/distill-template#al-folio
+    allow_remote_loader: false
+  compat:
+    bootstrap:
+      enabled: false
+  features:
+    cv:
+      enabled: false
+    distill:
+      enabled: false
+repo_trophies:
+  enabled: false
+repo_theme_light: default
+repo_theme_dark: dark
+collections:
+  projects:
+    output: true
+  news:
+    output: true
+  teachings:
+    output: false
+include: ['_pages']
+exclude:
+  - README.md
+  - docs/
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .github/
+  - .gitignore
+  - DESIGN_PREVIEW.html
+  - package.json
+  - package-lock.json
+  - LICENSE
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+sass:
+  style: compressed
+permalink: /blog/:year/:title/
+defaults:
+  - scope:
+      path: 'assets'
+    values:
+      sitemap: false
+  - scope:
+      path: ''
+      type: projects
+    values:
+      layout: page
+      sitemap: true
+scholar:
+  last_name: [Ahmed]
+  first_name: ["Md. Sabbir", "Md Sabbir", "M. S."]
+  style: apa
+  locale: en
+  source: /_bibliography/
+  bibliography: papers.bib
+  bibliography_template: bib
+  replace_strings: true
+  join_strings: true
+  bibtex_filters: [latex, smallcaps, superscript]
+  details_dir: bibliography
+  details_link: Details
+  query: "@*"
+  group_by: year
+  group_order: descending
+max_author_limit: 8
+enable_publication_thumbnails: false
+enable_publication_badges:
+  altmetric: false
+  dimensions: false
+  google_scholar: false
+  inspirehep: false
+filtered_bibtex_keywords: [abbr, abstract, additional_info, annotation, bibtex_show, code, pdf, poster, preview, selected, slides, supp, website, blog, video]
+external_links:
+  enabled: true
+  rel: "noopener noreferrer"
+  target: _blank
+imagemagick:
+  enabled: false
+lazy_loading_images: true
+enable_darkmode: true
+enable_math: false
+enable_masonry: false
+enable_project_categories: false
+enable_navbar_social: false
+enable_progressbar: false
+enable_medium_zoom: false
+enable_video_embedding: false
+enable_cookie_consent: false
+serve_og_meta: true
+serve_schema_org: true
+og_image: assets/img/social-preview.jpg
+# Avoid external analytics and trackers until deliberately configured.
+analytics: {}
+newsletter:
+  enabled: false
+giscus: {}
+# Libraries used by al-folio's icon and search components; CDN URLs are version pinned.
+third_party_libraries:
+  download: false
+  fontawesome:
+    url:
+      css: "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@{{version}}/css/all.min.css"
+    version: "7.2.0"
+  academicons:
+    url:
+      css: "https://cdn.jsdelivr.net/npm/academicons@{{version}}/css/academicons.min.css"
+    version: "1.9.5"
+  scholar-icons:
+    url:
+      css: "https://cdn.jsdelivr.net/npm/scholar-icons@{{version}}/css/scholar-icons.css"
+    version: "1.0.3"
+  google_fonts:
+    url:
+      fonts: "https://fonts.googleapis.com/css?family=Source+Sans+3:400,500,600,700|Source+Serif+4:400,500,600&display=swap"
+plugins:
+  - jekyll/scholar
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-socials
+  - al_folio_core
+  - al_icons
+  - al_search
+  - al_citations
