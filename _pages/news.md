@@ -2,7 +2,7 @@
 layout: site
 title: News
 permalink: /news/
-nav: true
+nav: false
 nav_order: 8
 description: Academic news and research milestones of Md. Sabbir Ahmed.
 ---

@@ -2,7 +2,7 @@
 layout: site
 title: Service
 permalink: /service/
-nav: true
+nav: false
 nav_order: 7
 description: University leadership, academic service, and scholarly reviewing.
 ---

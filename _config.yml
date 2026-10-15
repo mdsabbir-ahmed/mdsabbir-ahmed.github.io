@@ -1,6 +1,6 @@
 # Md. Sabbir Ahmed | Academic website | al-folio v1 Jekyll runtime
-# Repository: https://github.com/mdsabbirahmedbracu/mdsabbirahmedbracu.github.io
-title: ""
+# Repository: https://github.com/mdsabbir-ahmed/mdsabbir-ahmed.github.io
+title: "Md. Sabbir Ahmed"
 first_name: "Md. Sabbir"
 middle_name: ""
 last_name: "Ahmed"
@@ -13,14 +13,14 @@ description: >-
   and Trustworthy AI, Usable Security and Privacy, and Social Computing.
 keywords: "Md Sabbir Ahmed, HCI, human-computer interaction, human-centered AI, trustworthy AI, usable security, Bangladesh, SIGCHI"
 footer_text: 'Research, teaching, and academic community leadership. Built with <a href="https://github.com/alshedivat/al-folio">al-folio</a> and Jekyll.'
-url: "https://mdsabbirahmedbracu.github.io"
+url: "https://mdsabbir-ahmed.github.io"
 baseurl: ""
 last_updated: false
 back_to_top: true
 navbar_fixed: true
 footer_fixed: false
 max_width: 1120px
-search_enabled: true
+search_enabled: false
 socials_in_search: true
 posts_in_search: false
 bib_search: true
@@ -119,7 +119,7 @@ external_links:
 imagemagick:
   enabled: false
 lazy_loading_images: true
-enable_darkmode: true
+enable_darkmode: false
 enable_math: false
 enable_masonry: false
 enable_project_categories: false

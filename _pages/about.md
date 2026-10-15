@@ -1,8 +1,8 @@
 ---
 layout: site
-title: About
+title: Home
 permalink: /
-nav: true
+nav: false
 nav_order: 1
 description: Research, teaching, publications and academic community engagement of Md. Sabbir Ahmed.
 ---
